@@ -1,0 +1,19 @@
+Index: bot.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/bot.py b/bot.py
+--- a/bot.py	
++++ b/bot.py	
+@@ -26,6 +26,7 @@
+ 
+ 
+ def message_for_client(*args, **kwargs):
+-    print('Вы всегда можете решить все вопросы, позвонив менеджеру')
++    print('Вы всегда можете решить все вопросы, позвонив')
++
++message_for_client()
+ 
+-message_for_client()
+\ No newline at end of file
