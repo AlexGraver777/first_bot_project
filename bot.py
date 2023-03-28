@@ -60,23 +60,23 @@ def save_to_file(message):
 
  #  ''' ЧАСТЬ ДЛЯ РАБОТЫ С TRELLO'''
  #  Достаем данные из Trello, для сравнения дат бронирования
-import requests
-
-# Указать ключ API и токен доступа
-key = "f441cac8c351bbe4c43f34197e06d522"
-token = "ATTAce7ec4770983776f4852d55a604958bc34e038307abdc5e327710bd060854820AD686D15"
-
-# Указать ID доски и ID карточки
-board_id = "5wj9R3XQ"
-card_id = "your_card_id"
-
-# Формирование URL для запроса
-url = f"https://api.trello.com/1/boards/{board_id}/cards/{card_id}"
-querystring = {"key": key, "token": token}
-
-# Выполнение запроса и получение данных о карточке
-response = requests.request("GET", url, params=querystring)
-card_data = response.json()
+# import requests
+#
+# # Указать ключ API и токен доступа
+# key = "f441cac8c351bbe4c43f34197e06d522"
+# token = "ATTAce7ec4770983776f4852d55a604958bc34e038307abdc5e327710bd060854820AD686D15"
+#
+# # Указать ID доски и ID карточки
+# board_id = "5wj9R3XQ"
+# card_id = "your_card_id"
+#
+# # Формирование URL для запроса
+# url = f"https://api.trello.com/1/boards/{board_id}/cards/{card_id}"
+# querystring = {"key": key, "token": token}
+#
+# # Выполнение запроса и получение данных о карточке
+# response = requests.request("GET", url, params=querystring)
+# card_data = response.json()
 
 #  СПОСОБ ОБХОДА ПРОБЛЕМЫ С ID КАРТОЧЕК:
 #  url = f"https://api.trello.com/1/boards/{board_id}/cards?key={api_key}&token={api_token}"
