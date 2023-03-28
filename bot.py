@@ -77,6 +77,13 @@ querystring = {"key": key, "token": token}
 # Выполнение запроса и получение данных о карточке
 response = requests.request("GET", url, params=querystring)
 card_data = response.json()
+
+#  СПОСОБ ОБХОДА ПРОБЛЕМЫ С ID КАРТОЧЕК:
+#  url = f"https://api.trello.com/1/boards/{board_id}/cards?key={api_key}&token={api_token}"
+# response = requests.get(url)
+# cards = response.json()
+
+
  #  '''ОКОНЧАНИЕ ЧАСТИ РАБОТЫ С TRELLO'''
 
 
