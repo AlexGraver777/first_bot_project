@@ -83,7 +83,6 @@ def save_to_file(message):
 # response = requests.get(url)
 # cards = response.json()
 
-
  #  '''ОКОНЧАНИЕ ЧАСТИ РАБОТЫ С TRELLO'''
 
 
